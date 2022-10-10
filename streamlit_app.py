@@ -87,8 +87,8 @@ with st.form(key='query_params'):
     locations = st.multiselect('Location(s):', loc_list)
     topics = st.multiselect('Topic(s):', topic_list)
     ftq_text = st.text_input('Full Text Search:', '',
-                             help='Perform full text search. Use double quotes \
-                             for phrases, OR for logical or, and - for \
+                             help='Perform full text search. Use double \
+                             quotes for phrases, OR for logical or, and - for \
                              logical not.')
     query = st.form_submit_button(label='Execute Search')
     where_ent = where_ft = ''
