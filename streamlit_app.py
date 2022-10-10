@@ -37,7 +37,7 @@ def get_entity_list(qual):
     rows = run_query(entsfw + qual + entorder)
     for r in rows:
         lov.append(r[0])
-    return(lov)
+    return lov
 
 
 @st.experimental_memo
@@ -49,7 +49,7 @@ def get_topic_list():
     rows = run_query(tq)
     for r in rows:
         lov.append(r[0])
-    return(lov)
+    return lov
 
 
 conn = init_connection()
