@@ -15,7 +15,7 @@ archive_description
 
 
 # initialize database connection - uses st.cache to only run once
-@st.experimental_singleton(suppress_st_warning=True)
+@st.experimental_singleton
 def init_connection():
     return psycopg2.connect(**st.secrets["postgres"])
 
